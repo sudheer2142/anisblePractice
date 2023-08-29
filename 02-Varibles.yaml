@@ -1,0 +1,8 @@
+- name: Read the ansible var from anotehr file
+  host: localhost
+  vars_file:
+  - local_varibles.yaml
+  tasks:
+  - name: pring the var from another file
+    ansible.builtin.debug:
+      msg: hi {{NAME}} thanks for learning{{COURSE}}
