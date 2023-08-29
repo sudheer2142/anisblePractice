@@ -3,10 +3,10 @@
   become: yes
   vars_prompt:
   - name: USERNAME
-    promt: Please enter username
+    prompt: Please enter username
     private: false # user can see the data entered
   - name: PASSWORD
-    promt: Please prvide password
+    prompt: Please prvide password
     private: true # password enter cannot be visible is the value is true
   tasks:
   - name: print the values received
