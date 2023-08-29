@@ -1,6 +1,6 @@
 - name: Read the ansible var from anotehr file
   hosts: localhost
-  vars_file:
+  vars_files:
   - local_varibles.yaml
   tasks:
   - name: pring the var from another file
