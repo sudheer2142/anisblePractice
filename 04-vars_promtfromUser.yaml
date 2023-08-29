@@ -1,0 +1,14 @@
+- name: Get data form user by user inut/promting
+  hosts: localhost
+  become: yes
+  vars_promt:
+  - name: USERNAME
+    promt: Please enter username
+    private: false # user can see the data entered
+  - name: PASSWORD
+    promt: Please prvide password
+    private: true # password enter cannot be visible is the value is true
+  tasks:
+  - name: print the values received
+    ansible.builtin.debug:
+      msg: "username:{{USERNAME}}, password:{{PASSWORD}}"
