@@ -1,5 +1,5 @@
 - name: Read the ansible var from anotehr file
-  host: localhost
+  hosts: localhost
   vars_file:
   - local_varibles.yaml
   tasks:
