@@ -1,7 +1,7 @@
 - name: Get data form user by user inut/promting
   hosts: localhost
   become: yes
-  vars_promt:
+  vars_prompt:
   - name: USERNAME
     promt: Please enter username
     private: false # user can see the data entered
