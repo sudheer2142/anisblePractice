@@ -20,10 +20,10 @@
       msg: Hi {{username}} and he is in {{place}}
   - name : Taking the username from promt
     vars_prompt:
-      name: USERNAME
+    - name: USERNAME
       promt: please enter username
       private : false
-      name : place
+    - name : place
       promt: please enter your place
       private : false
     ansible.builtin.debug:
