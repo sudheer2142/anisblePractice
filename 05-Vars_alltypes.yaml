@@ -18,20 +18,20 @@
     ansible.builtin.debug:
       msg: Hi {{username}} and he is from the {{place}}
 
-  - name: Taking the vars from the files
-    ansible.builtin.debug:
-      msg: Hi {{Local_username}} and he is in {{Local_place}}
+  # - name: Taking the vars from the files
+  #   ansible.builtin.debug:
+  #     msg: Hi {{Local_username}} and he is in {{Local_place}}
 
-  - name: Taking the username from promt
-    vars_prompt:
-    - name: USERNAME
-      prompt: please enter username
-      private : false
-    - name: place
-      prompt: please enter your place
-      private: false
-    ansible.builtin.debug:
-      msg: Hi {{USERNAME}} and he is from the {{place}}
+  # - name: Taking the username from promt
+  #   vars_prompt:
+  #   - name: USERNAME
+  #     prompt: please enter username
+  #     private : false
+  #   - name: place
+  #     prompt: please enter your place
+  #     private: false
+  #   ansible.builtin.debug:
+  #     msg: Hi {{USERNAME}} and he is from the {{place}}
 
 
 
