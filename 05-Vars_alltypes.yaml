@@ -24,10 +24,10 @@
 
   - name: Taking from the promt
     vars_promt:
-    - name: USERNAME
+    - user: USERNAME
       promt: please enter name
       private: false
-    - name: Place
+    - userplace: Place
       prompt: please enter place
       private: false
     ansible.builtin.debug:
