@@ -15,4 +15,4 @@
   tasks:
   - name: printing all types of datatypes
     ansible.builtin.debug:
-      msg: "{{AGE}}" and "{{Skills}}"
+      msg: {{AGE}} and {{Skills}}
