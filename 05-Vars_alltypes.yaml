@@ -11,7 +11,7 @@
       msg: Hi {{username}} and he is from {{place}}
   - name: Overriding the vars in child level/task level
     vars:
-      username: sudheerPagadala
+    - username: sudheerPagadala
     ansible.builtin.debug:
       msg: Hi {{username}} and he is from the {{place}}
   - name: taking the vars from the files
