@@ -23,10 +23,10 @@
   tasks:
   - name : Taking the username from promt
     vars_prompt:
-    - name: USERNAME
+    - user: USERNAME
       promt: please enter username
       private : false
-    - name : place
+    - places : place
       promt: please enter your place
       private : false
     ansible.builtin.debug:
