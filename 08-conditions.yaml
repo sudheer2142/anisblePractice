@@ -4,8 +4,8 @@
   tasks:
   - name: executing the command of user id
     ansible.builtin.command: id roboshop
-    register: output 
-    ignores_errors: true
+      register: output 
+      ignores_errors: true
   - name: printing the exist status
     ansible.builtin.debug:
       msg: "{{output.rc}}"
