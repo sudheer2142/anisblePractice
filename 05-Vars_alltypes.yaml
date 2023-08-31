@@ -8,16 +8,19 @@
   - name: printing the vars from the play level
     ansible.builtin.debug:
       msg: Hi {{username}} and he is from {{place}}
+  tasks:
   - name: Overriding the vars in child level/task level
     vars:
       username: sudheerPagadala
     ansible.builtin.debug:
       msg: Hi {{username}} and he is from the {{place}}
+  tasks:
   - name: taking the vars from the files
     vars_files: 
     - local_varibles.yaml
     ansible.builtin.debug:
       msg: Hi {{username}} and he is in {{place}}
+  tasks:
   - name : Taking the username from promt
     vars_prompt:
     - name: USERNAME
