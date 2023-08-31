@@ -18,6 +18,9 @@
     ansible.builtin.debug:
       msg: Hi {{username}} and he is from the {{place}}
 
+  - name: Taking from the local files
+    ansible.builtin.debug:
+      msg: hi {{Local_username}}
   # - name: Taking the vars from the files
   #   ansible.builtin.debug:
   #     msg: Hi {{Local_username}} and he is in {{Local_place}}
