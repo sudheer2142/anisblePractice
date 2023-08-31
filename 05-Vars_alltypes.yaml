@@ -21,10 +21,17 @@
   - name: Taking from the local files
     ansible.builtin.debug:
       msg: hi {{Local_username}}
-  # - name: Taking the vars from the files
-  #   ansible.builtin.debug:
-  #     msg: Hi {{Local_username}} and he is in {{Local_place}}
 
+  - name: Taking from the promt
+    vars_promt:
+    - name: USERNAME
+      promt: please enter name
+      private: false
+    - name: Place
+      prompt: please enter place
+      private: false
+    ansible.builtin.debug:
+      msg: Hi {{USERNAME}}
   # - name: Taking the username from promt
   #   vars_prompt:
   #   - name: USERNAME
