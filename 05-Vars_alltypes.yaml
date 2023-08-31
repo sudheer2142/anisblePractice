@@ -17,6 +17,8 @@
       msg: Hi {{username}} and he is from the {{place}}
 
   - name: Taking the vars from the files
+    hosts: localhost
+    become: yes
     vars_files:
     - local_varibles.yaml
     ansible.builtin.debug:
