@@ -1,0 +1,11 @@
+- name: Loops
+  hosts: localhost
+  tasks:
+  - name: Printing the names from list
+    loop:
+    - Sudheer
+    - anu
+    - suhi
+    - sunvi
+    ansible.builin.debug:
+      msg: Hi {{item}}
