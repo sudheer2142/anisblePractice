@@ -1,0 +1,18 @@
+- name: list of datatyes
+  hosts: localhost
+  vars:
+  - AGE: 30 #Number
+  - NAME: "Sudheer" #String
+  - isDevOps: true #boolean
+  - Skills: #list
+    - DevOps
+    - AWS
+    - Docker
+  - EXPERIENCE: #map
+      DevOps: 7
+      AWS: 5
+      Docker: 4
+  tasks:
+  - name: printing all types of datatypes
+    ansible.builtin.debug:
+      msg: "{{AGE}}" änd "{{NAME}}"  and "{{isDevOps}}" and "{{Skills}}" and "{{EXPERIENCE}}"
