@@ -24,9 +24,9 @@
     - name: USERNAME
       prompt: please enter username
       private : false
-    - name : place
+    - name: place
       prompt: please enter your place
-      private : false
+      private: false
     ansible.builtin.debug:
       msg: Hi {{USERNAME}} and he is from the {{place}}
 
