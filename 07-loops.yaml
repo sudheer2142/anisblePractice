@@ -1,11 +1,10 @@
 - name: Loops
   hosts: localhost
   tasks:
-  - name: Printing the names from list
-    ansible.builin.debug:
-      msg: "Hi {{item}}"
+  - name: recurssive printing of names
+    ansible.builtin.debug:
+      msg: "hi {{item}}"
     loop:
-    - Sudheer
+    - sudheer
     - anu
     - suhi
-    - sunvi
