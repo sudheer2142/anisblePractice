@@ -1,9 +1,9 @@
 - name: This example contains the different types of var usage 
   hosts: localhost
   become: yes
-  vars_promt:
+  vars_prompt:
     - user: Uid
-      promt: please enter name
+      prompt: please enter name
       private: false
     - place: Plc
       prompt: please enter place
