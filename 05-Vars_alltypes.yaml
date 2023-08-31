@@ -1,7 +1,13 @@
 - name: This example contains the different types of var usage 
   hosts: localhost
   become: yes
-  
+  vars_prompt:
+  - name: Uid
+    prompt: please enter name
+    private: false
+  - name: Plc
+    prompt: please enter place
+    private: false
   vars_files:
     - local_varibles.yaml
   #Playlevel vars declaration
@@ -22,13 +28,7 @@
   - name: Taking from the local files
     ansible.builtin.debug:
       msg: hi {{Local_username}}
-  vars_prompt:
-    - name: Uid
-      prompt: please enter name
-      private: false
-    - name: Plc
-      prompt: please enter place
-      private: false
+
   - name: Taking from the promt
     ansible.builtin.debug:
       msg: Hi {{Uid}}
