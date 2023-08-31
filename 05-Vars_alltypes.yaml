@@ -1,6 +1,15 @@
 - name: This ecample contains the different types of var usage 
   hosts: localhost
   become: yes
+  vars_promt:
+    - name: Uid
+      promt: please enter name
+      private: false
+    - name: Plc
+      prompt: please enter place
+      private: false
+  vars_files:
+    - local_varibles.yaml
   #Playlevel vars declaration
   vars:
   - username: Sudheer
@@ -17,8 +26,13 @@
       msg: Hi {{username}} and he is from the {{place}}
 
   - name: Taking from the local files
-    vars_files:
-    - local_varibles.yaml
     ansible.builtin.debug:
       msg: hi {{Local_username}}
+
+  - name: Taking from the promt
+    ansible.builtin.debug:
+      msg: Hi {{Uid}}
+
+
+
     
