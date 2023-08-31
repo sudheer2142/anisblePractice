@@ -1,4 +1,4 @@
 - name: ping the node
-  hosts: ping the server
+  hosts: localhost
   ansible.builtin.ping:
   
