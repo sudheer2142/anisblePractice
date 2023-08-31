@@ -3,8 +3,8 @@
   become: yes
   #Playlevel vars declaration
   vars:
-    username: Sudheer
-    place: kadapa
+  - username: Sudheer
+  - place: kadapa
   tasks:
   - name: printing the vars from the play level
     ansible.builtin.debug:
