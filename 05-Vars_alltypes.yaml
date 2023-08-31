@@ -1,11 +1,11 @@
-- name: This ecample contains the different types of var usage 
+- name: This example contains the different types of var usage 
   hosts: localhost
   become: yes
   vars_promt:
-    - name: Uid
+    - user: Uid
       promt: please enter name
       private: false
-    - name: Plc
+    - place: Plc
       prompt: please enter place
       private: false
   vars_files:
