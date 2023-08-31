@@ -21,13 +21,13 @@
     ansible.builtin.debug:
       msg: Hi {{username}} and he is in {{place}}
   tasks:
-  - name : Taking the username from promt
+  - name: Taking the username from promt
     vars_prompt:
     - user: USERNAME
-      promt: please enter username
+      prompt: please enter username
       private : false
     - places : place
-      promt: please enter your place
+      prompt: please enter your place
       private : false
     ansible.builtin.debug:
       msg: Hi {{USERNAME}} and he is from the {{place}}
